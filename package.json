@@ -1,0 +1,15 @@
+{
+  "name": "satapi",
+  "version": "1.0.0",
+  "description": "SatAPI — Pay-per-API marketplace on Bitcoin L1 using OP_NET",
+  "scripts": {
+    "install:all": "cd contracts && npm install && cd ../frontend && npm install && cd ../backend && npm install",
+    "build:contract": "cd contracts && npm run build",
+    "dev": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "deploy:testnet": "npx ts-node scripts/deploy.ts"
+  },
+  "keywords": ["bitcoin", "opnet", "api", "marketplace", "web3"],
+  "license": "MIT"
+}

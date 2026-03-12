@@ -1,0 +1,29 @@
+{
+  "name": "satapi-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@btc-vision/transaction": "^1.1.0-rc.1",
+    "framer-motion": "^12.6.5",
+    "next": "^14.2.35",
+    "opnet": "^1.2.0-rc.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-syntax-highlighter": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.3"
+  }
+}
