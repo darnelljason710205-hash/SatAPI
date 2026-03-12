@@ -61,7 +61,7 @@ export default function ApiDetailPage() {
             setStatus({ type: 'info', message: 'Demo mode — calling API without on-chain payment...' });
             setResponse(null);
             try {
-                const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
+                const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || '';
                 const res = await fetch(`${backendUrl}/api/call`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },

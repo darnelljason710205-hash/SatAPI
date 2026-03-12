@@ -103,7 +103,7 @@ export async function deactivateAPIOnChain(config: OpnetConfig, apiId: number): 
 // ── Backend proxy call ──
 
 export async function callAPIProxy(apiId: number, txHash: string, endpoint: string) {
-    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || '';
     const res = await fetch(`${backendUrl}/api/call`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
